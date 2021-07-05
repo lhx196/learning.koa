@@ -62,4 +62,6 @@ function delay() {
 
 const middlewares = [fn1, fn2, fn3];
 const finalFn = compose(middlewares);
+// console.log(typeof finalFn)
+// console.log(finalFn);
 finalFn();

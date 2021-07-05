@@ -8,7 +8,7 @@ module.exports = {
   set body(val) {
     this.response.body = val;
   },
-  set url(val) {
-    this.request.url = val;
-  },
+  get method(){
+    return this.request.method
+  }
 };
